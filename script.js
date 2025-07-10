@@ -45,12 +45,27 @@ document.addEventListener('DOMContentLoaded', () => {
         duration:1,
         delay:3
     })
+    let change = gsap.from("#animImage", {
+        x:' -700',
+        paused: true,
+        duration:3
+    });
 
+    document.querySelector("#play").onclick = () => {
+        change.play();
+    };
 
-
-
-    let change= gsap.to("#play",{
-        x:"200",
-    })
-
+    document.querySelector("#pause").onclick= ()=>{
+        change.pause()
+    }
+    
+    document.querySelector("#resume").onclick= ()=>{
+        change.resume()
+    }   
+    document.querySelector("#reverse").onclick= ()=>{
+        change.reverse()
+    }   
+    document.querySelector("#restart").onclick= ()=>{
+        change.restart()
+    }
 });

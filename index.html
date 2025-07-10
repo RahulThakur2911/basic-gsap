@@ -49,19 +49,56 @@
 
 
     <!-- Animation Control Section -->
-<section class="animation-control">
-    <div class="anim-image">
-      <img id="animImage" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Moving Nature Image">
-    </div>
-    <div class="controls">
-      <button id="play" class="control-btn">Play</button>
-      <button id="pause" class="control-btn">Pause</button>
-      <button id="resume" class="control-btn">Resume</button>
-      <button id="reverse" class="control-btn">Reverse</button>
-      <button id="restart" class="control-btn">Restart</button>
-    </div>
-  </section>
-  
+    <section class="animation-control">
+        <div class="section-header">
+            <h2>Interactive Nature Animation</h2>
+            <p>Control the animation with these intuitive buttons</p>
+        </div>
+        
+        <div class="anim-container">
+            <div class="anim-image">
+                <img id="animImage" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Moving Nature Image">
+            </div>
+            <div class="controls">
+                <button id="play" class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
+                    </svg>
+                    Play
+                </button>
+                <button id="pause" class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="4" width="4" height="16" fill="currentColor"/>
+                        <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
+                    </svg>
+                    Pause
+                </button>
+                <button id="resume" class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 4H10V20H6V4Z" fill="currentColor"/>
+                        <path d="M14 4H18V20H14V4Z" fill="currentColor"/>
+                    </svg>
+                    Resume
+                </button>
+                <button id="reverse" class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 12L8 7V17L14 12Z" fill="currentColor"/>
+                        <path d="M16 7V17H20V7H16Z" fill="currentColor"/>
+                    </svg>
+                    Reverse
+                </button>
+                <button id="restart" class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5V2L8 6L12 10V7C15.31 7 18 9.69 18 13C18 16.31 15.31 19 12 19C8.69 19 6 16.31 6 13H4C4 17.42 7.58 21 12 21C16.42 21 20 17.42 20 13C20 8.58 16.42 5 12 5Z" fill="currentColor"/>
+                    </svg>
+                    Restart
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
