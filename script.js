@@ -10,60 +10,47 @@ document.addEventListener('DOMContentLoaded', () => {
     
     gsap.from('.hero-image', { 
         duration: 2, 
-        y: 500, 
+        x: 100, 
         opacity: 0, 
         ease: 'power3.out', 
 
     });
-    
-    // Animation for your original boxes
-    gsap.to('#box1', {
-        duration: 2,
-        x: 300,
-        rotation: 360,
-        ease: 'bounce.out',
-        repeat: -1,
-        yoyo: true
-    });
-    
-    gsap.to('#box2', {
-        duration: 2,
-        x: -300,
-        rotation: -360,
-        ease: 'bounce.out',
-        repeat: -1,
-        yoyo: true,
-        delay: 0.5
-    });
-
     gsap.from('.navbar',{
-        y:"-200",
+        x:"-100",
         opacity:0,
         duration:1
     }) 
     
     gsap.from('.hero-content h1',{
-        y:"200",
+        x:"-100",
         opacity:0,
         duration:1,
         delay:0.5
     })
     gsap.from('.hero-content p',{
-        y:"200",
+        x:"-100",
         opacity:0,
         duration:1,
         delay:1.5
     })
     gsap.from('.hero-features',{
-        y:"200",
+        x:"-100",
         opacity:0,
         duration:1,
         delay:2
     })
     gsap.from('.hero-buttons',{
-        y:"200",
+        x:"-100",
         opacity:0,
         duration:1,
         delay:3
     })
+
+
+
+
+    let change= gsap.to("#play",{
+        x:"200",
+    })
+
 });
