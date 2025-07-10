@@ -3,17 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSAP</title>
+    <title>GSAP Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+       <!-- Replace the logo div in your navbar with this SVG -->
+       <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 5C10 15 5 25 10 35C15 30 25 30 30 35C35 25 30 15 20 5Z" fill="#3a913f"/>
+          <path d="M20 5C20 15 18 25 15 30" stroke="#2e5e33" stroke-width="1.5"/>
+        </svg>
+        <span style="margin-left: 10px; color: #3a913f; font-weight: bold;">GreenLife</span>
+      </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Embrace the Beauty of Nature</h1>
+            <p>Discover the wonders of our planet with GreenLife. We're dedicated to preserving nature's beauty and helping people connect with the environment through sustainable living practices.</p>
+            <ul class="hero-features">
+                <li>Eco-friendly Products</li>
+                <li>Sustainable Gardening Tips</li>
+                <li>Nature Conservation Programs</li>
+                <li>Green Living Workshops</li>
+            </ul>
+            <div class="hero-buttons">
+                <button class="cta-button primary">Join Our Community</button>
+                <button class="cta-button secondary">Explore Nature</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?q=80&w=1059&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Original Boxes Section -->
     <div class="main">
         <div id="box1"></div>
         <div id="box2"></div>
     </div>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="script.js"></script>
